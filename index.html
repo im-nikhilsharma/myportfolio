@@ -6,67 +6,202 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mystyle.css">
-    <title>Age Calculator</title>
-    <script src='javascript.js'></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="myScript.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Profile</title>
 </head>
 
 <body>
-    <h1 class="heading">Age Calculator</h1>
-    <hr class="firstline">
-    <div class="box1">
-        <h2 class="title">Date Of Birth</h2>
-        <select name="date" id="date">
-            <option value="01">01</option>
-            <option value="02">02</option>
-            <option value="03">03</option>
-            <option value="04">04</option>
-            <option value="05">05</option>
-            <option value="06">06</option>
-            <option value="07">07</option>
-            <option value="08">08</option>
-            <option value="09">09</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-            <option value="16">16</option>
-            <option value="17">17</option>
-            <option value="18">18</option>
-            <option value="19">19</option>
-            <option value="20">20</option>
-            <option value="21">21</option>
-            <option value="22">22</option>
-            <option value="23">23</option>
-            <option value="24">24</option>
-            <option value="25">25</option>
-            <option value="26">26</option>
-            <option value="27">27</option>
-            <option value="28">28</option>
-            <option value="29">29</option>
-            <option value="30">30</option>
-            <option value="31">31</option>
-        </select>
-        <select name="month" id="month">
-            <option value=""selected disabled>Month</option>
-            <option value="january">Jan</option>
-            <option value="february">Feb</option>
-            <option value="march">Mar</option>
-            <option value="april">Apr</option>
-            <option value="may">May</option>
-            <option value="june">Jun</option>
-            <option value="july">July</option>
-            <option value="august">Aug</option>
-            <option value="september">Sep</option>
-            <option value="october">Oct</option>
-            <option value="november">Nov</option>
-            <option value="december">Dec</option>
-        </select>
-        <input type="text" placeholder="year"name="year" id="year">
-            <button onclick="calculateAge">Calculate</button>
+    <div class="mainheader">
+    <div class="header">
+        <h2 class="name">Ns.</h2><img onclick="document.getElementById('myImage').src='Nikhil'" id="arrow" class="arrow" src="images/arrow-up-right.svg" alt="arrow">
     </div>
-   
+    <div class="header2">
+        <div id="span"><a class="about1" href="#abouthim">About Me</a></div>
+        <div id="span"><div class="material-icons">favorite</div></div>
+    </div>
+    </div>
+    <div class="main">
+        <div class="first">
+            <img class="fimage" src="images/IMG.JPG" alt="image">
+            <h1 class="welcome">I'm Nikhil Sharma;</h1>
+            <h2 class="welcome_msg">A Web-Developer + Vector Artist.</h2>
+            <div class="social">
+                <a href="https://www.facebook.com/" target="_blank"><img class="facebook_icon" src="images/facebook.svg" alt="facebook_icon"></a>
+                <a href="https://www.instagram.com/im.nikhilsharma/" target="_blank"><img class="insta_icon" src="images/instagram.svg" alt="insta_icon"></a>
+                <a href="https://twitter.com/i_mnikhilsharma" target="_blank"><img class="twitter_icon" src="images/twitter.svg" alt="twitter_icon"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img class="linkedin_icon" src="images/linkedin.svg" alt="linkedin_icon"></a>
+                <a href="https://github.com/im-nikhilsharma" target="_blank"><img class="github_icon" src="images/github.svg" alt="github_icon"></a>
+            </div>
+            <div class="option">
+                <!-- button -->
+            <div class="artworkicon" onclick="myFunction()"><span class="material-icons1">format_paint</span></div>
+                <!-- div -->
+             <div id="artwork_icondiv">
+                    <h1 class="themes_heading">Go with, what suits your eyes </h1>
+                <div class="secondwhitepage">    
+                    <div class="black_blockoftheme">
+                        <div class="halfline_block_black"></div>
+                    </div>
+                    <div class="blue_blockoftheme">
+                        <div class="halfline_block_blue"></div>
+                    </div>
+                    <div class="defaultwhite_blockoftheme">
+                        <div class="halfline_block_white"></div>
+                    </div>
+                </div>
+                </div>
+                <div class="workicon">
+                    <span class="material-icons2">work</span>
+                </div>
+                <div class="overworkicon">
+                    <h1>So Much to Do.</h1>
+                </div>
+                <div class="codeicon">
+                    <span class="material-icons3">code</span>
+                </div>
+                <div class="overcodeicon">
+                    <h2>Go to My github for my codes.</h2>
+                </div>
+                <div class="bookicon">
+                    <span class="material-icons3">
+                        library_books
+                    </span>
+                </div>
+                <div class="overbookicon">
+                    <div class="heading">
+                        <h1>Readed Books</h1>
+                    </div>
+                    <ul class="list">
+                        <li>Magic of Thinking Big</li>
+                        <li>Rich Dad Poor Dad</li>
+                        <li>Atomic Habits</li>
+                        <li>The Intelligent Investor</li>
+                        <li>The Atitude is Everything</li>
+                        <li>Think And Grow Rich</li>
+                        <li>who moved my cheese?</li>
+                        <li>How To Win Friends And Influence People</li>
+                        <li>See You At The Top</li>
+                        <li>The 7 Habits of Highly Effective People</li>
+                        <li>You Can Heal Your Life</li>
+                    </ul>
+                </div>
+                <div class="quoteicon">
+                    <span class="material-icons3">
+                        format_quote
+                    </span>
+                </div>
+                <div class="overquoteicon">
+                    <p class="paragraph"><span style="font-family:Cambria">“Every great developer you know got there by
+                            solving problems they were unqualified to solve
+                            until they actually did it.”
+                            – Patrick McKenzie.</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="second">
+            <h2 class="hi">Hi People,</h2>
+            <p class="fpara">Welcome to my website.</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box1">
+            <h2 class="Experience">Skills</h2>
+        </div>
+        <div class="box2">
+            <h2 class="titles">HTML</h2>
+            <hr>
+            <div class="probar"></div>
+            <h1 class="percent">70%</h1>
+        </div>
+        <div class="box3">
+            <h2 class="titles">CSS</h2>
+            <hr>
+            <div class="probar1"></div>
+            <h1 class="percent">50%</h1>
+        </div>
+        <div class="box4">
+            <h2 class="titles">JavaScript</h2>
+            <hr>
+            <div class="probar2"></div>
+            <h1 class="percent">10%</h1>
+        </div>
+        <div class="box5">
+            <h2 class="titles">C</h2>
+            <hr>
+            <div class="probar3"></div>
+            <h1 class="percent">60%</h1>
+        </div>
+    </div>
+    <div class="secondmain">
+        <h1>Designer</h1>
+        <h1>Coder</h1>
+        <h1>Animator</h1>
+    </div>
+    <div class="thirdmain">
+        <div class="work_title">
+            <h1>Work</h1>
+        </div>
+    </div>
+    <div class="thirdmain2">
+        <div class="card_1">
+            <div class="heading_1">
+                <h2>Vector Artist</h2>
+            </div>
+            <img class="pen_icon" src="images/undraw_pen_nqf7.svg" alt="vector_pen">
+        </div>
+        <div class="card_2">
+            <div class="heading_2">
+                <h2>Web Developer</h2>
+            </div>
+            <img class="web_dev_image" src="images/undraw_dev_productivity_umsq.svg" alt="web_image">
+        </div>
+        <div class="card_3">
+            <div class="heading_3">
+                <h2>Tutor</h2>
+            </div>
+            <img class="tutor_image" src="images/tutor_icon.svg"tutor_imge">
+        </div>
+    </div>
+    <div class="aboutme" id="abouthim"><h1>About myself in points</h1></div>
+    <div class="fourthmain">
+        <ul class="list_in_about">
+            <li>I'm a front-end developer located in Prayagraj(in India). I have some serious passion for UI design,animations and creating intuitive dynamic user experiences.</li>
+            <li>I like things well organised and thoughtfull done.</li>
+            <li>An independent guy with problem solving skills.</li>
+            <li>I do like Tv series, Hollywood movies but I figure out it very time taking so all i now prefer is books over films.</li>
+            <li>Interested in working with such people who are willing to make their websites awsome and uniqe both at the same time.</li>
+        </ul>   
+    </div>
+    <div class="fourthtext">
+        <h2>Listed here Some vector-arts</h2>
+    </div>
+    <div class="fourth2main">
+        <div class="images">
+
+        </div>
+    </div>
+    <div class="fifthmain">
+        <div class="visitors">
+            <div class="head">
+                <h2>Visitors</h2>
+            </div>
+            <div class="visitors_num">
+                <h3>9999</h3>
+            </div>
+        </div>
+    </div>
+    <div class="sixthmain">
+        <h1>Contact Me.</h1>
+    </div>
+    <div class="sixthmain_second">
+        <h3 class="write_name">Write Your Name - <input id="name_id" type="text"></h3>
+        <h3 class="write_email">Your Email - <input id="email_id" type="text"></h3>
+        <h3 class="write_massege">Your Massege - <textarea name="textarea" id="massege_id" cols="30"
+                rows="10"></textarea>
+    </div>
 </body>
 
 </html>
