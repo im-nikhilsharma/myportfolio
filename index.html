@@ -8,50 +8,61 @@
     <link rel="stylesheet" href="mystyle.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="myScript.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Profile</title>
 </head>
 
-<body>
+<body onload="myfunction()">
     <div class="mainheader">
-    <div class="header">
-        <h2 class="name">Ns.</h2><img onclick="document.getElementById('myImage').src='Nikhil'" id="arrow" class="arrow" src="images/arrow-up-right.svg" alt="arrow">
-    </div>
-    <div class="header2">
-        <div id="span"><a class="about1" href="#abouthim">About Me</a></div>
-        <div id="span"><div class="material-icons">favorite</div></div>
-    </div>
+        <div class="header">
+            <h2 class="name">Ns.</h2>
+            <div id="span"><a class="about1" href="#home">Home</a></div>
+            <div id="span"><a class="about1" href="#abouthim">About</a></div>
+            <div id="span"><a class="about1" href="#skills">Skills</a></div>
+            <div id="span"><a class="about1" href="#experience">Experience</a></div>
+            <div id="span"><a class="about1" href="#projects">Projects</a></div>
+            <div id="span"><a class="about1" href="#contact">Contact</a></div>
+            <div id="span">
+                <div class="material-icons">favorite</div>
+            </div>
+            <div id="span">
+                <div class="material-icons">dark_mode</div>
+            </div>
+
+        </div>
     </div>
     <div class="main">
-        <div class="first">
-            <img class="fimage" src="images/IMG.JPG" alt="image">
-            <h1 class="welcome">I'm Nikhil Sharma;</h1>
+        <div class="first" id="home">
+            <img src="/images/IMG.JPG" class="fimage" alt="image">
+            <div class="owner">
+                <h1 class="welcome">Nikhil Sharma</h1>
+                <img src="/images/icons8-instagram-verification-badge.svg" alt="verified" class="ver">
+            </div>
             <h2 class="welcome_msg">A Web-Developer + Vector Artist.</h2>
             <div class="social">
-                <a href="https://www.facebook.com/" target="_blank"><img class="facebook_icon" src="images/facebook.svg" alt="facebook_icon"></a>
-                <a href="https://www.instagram.com/im.nikhilsharma/" target="_blank"><img class="insta_icon" src="images/instagram.svg" alt="insta_icon"></a>
-                <a href="https://twitter.com/i_mnikhilsharma" target="_blank"><img class="twitter_icon" src="images/twitter.svg" alt="twitter_icon"></a>
-                <a href="https://www.linkedin.com" target="_blank"><img class="linkedin_icon" src="images/linkedin.svg" alt="linkedin_icon"></a>
-                <a href="https://github.com/im-nikhilsharma" target="_blank"><img class="github_icon" src="images/github.svg" alt="github_icon"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img class="facebook_icon" src="images/facebook.svg"
+                        alt="facebook_icon"></a>
+                <a href="https://www.instagram.com/im.nikhilsharma/" target="_blank"><img class="insta_icon"
+                        src="images/instagram.svg" alt="insta_icon"></a>
+                <a href="https://twitter.com/i_mnikhilsharma" target="_blank"><img class="twitter_icon"
+                        src="images/twitter.svg" alt="twitter_icon"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img class="linkedin_icon" src="images/linkedin.svg"
+                        alt="linkedin_icon"></a>
+                <a href="https://github.com/im-nikhilsharma" target="_blank"><img class="github_icon"
+                        src="images/github.svg" alt="github_icon"></a>
             </div>
             <div class="option">
                 <!-- button -->
-            <div class="artworkicon" onclick="myFunction()"><span class="material-icons1">format_paint</span></div>
+                <div class="artworkicon"><span class="material-icons1">school</span></div>
                 <!-- div -->
-             <div id="artwork_icondiv">
-                    <h1 class="themes_heading">Go with, what suits your eyes </h1>
-                <div class="secondwhitepage">    
-                    <div class="black_blockoftheme">
-                        <div class="halfline_block_black"></div>
-                    </div>
-                    <div class="blue_blockoftheme">
-                        <div class="halfline_block_blue"></div>
-                    </div>
-                    <div class="defaultwhite_blockoftheme">
-                        <div class="halfline_block_white"></div>
-                    </div>
-                </div>
+                <div class="overschoolicon">
+                    <h1>Education</h1>
+                    <ul class="list">
+                        <li>Pursusing MCA</li>
+                        <li>BCA <i>(2017-2020)</i></li>
+                        <li>Intermediate <i>(2017)</i></li>
+                        <li>High School <i>(2015)</i></li>
+                    </ul>
                 </div>
                 <div class="workicon">
                     <span class="material-icons2">work</span>
@@ -106,44 +117,65 @@
             <p class="fpara">Welcome to my website.</p>
         </div>
     </div>
+    <div class="aboutme" id="abouthim">
+        <h1>About myself in points</h1>
+    </div>
+    <div class="fourthmain">
+        <div class="list_in_about">
+            <li>I'm a front-end developer located in Prayagraj(in India). I have some serious passion for UI
+                design,animations and creating intuitive dynamic user experiences.</li>
+            <li>I like things well organised and thoughtfull done.</li>
+            <li>An independent guy with problem solving skills.</li>
+            <li>I do like Tv series, Hollywood movies but I figure out it very time taking so all i now prefer is books
+                over films.</li>
+            <li>Interested in working with such people who are willing to make their websites awsome and uniqe both at
+                the same time.</li>
+        </div>
+    </div>
+    <div class="uperbox" id="skills">
+        <h2>Skills</h2>
+    </div>
     <div class="box">
-        <div class="box1">
-            <h2 class="Experience">Skills</h2>
-        </div>
-        <div class="box2">
-            <h2 class="titles">HTML</h2>
-            <hr>
-            <div class="probar"></div>
-            <h1 class="percent">70%</h1>
-        </div>
-        <div class="box3">
-            <h2 class="titles">CSS</h2>
-            <hr>
-            <div class="probar1"></div>
-            <h1 class="percent">50%</h1>
-        </div>
-        <div class="box4">
-            <h2 class="titles">JavaScript</h2>
-            <hr>
-            <div class="probar2"></div>
-            <h1 class="percent">10%</h1>
-        </div>
-        <div class="box5">
-            <h2 class="titles">C</h2>
-            <hr>
-            <div class="probar3"></div>
-            <h1 class="percent">60%</h1>
-        </div>
+        <div class="skill">
+            <div class="buttons">
+              <div  onclick="first()"  class="mybutton" id="button1">Front-end </div> <div id="dotid1" class="dot"></div> 
+              <div  onclick="second()" class="mybutton" id="button2">Back-end  </div> <div id="dotid2" class="dot"></div>
+              <div  onclick="third()"  class="mybutton" id="button3">Database  </div> <div id="dotid3" class="dot"></div>
+              <div  onclick="four()"   class="mybutton" id="button4">Design    </div> <div id="dotid4" class="dot"></div>
+              <div  onclick="five()"   class="mybutton" id="button5">Tools     </div> <div id="dotid5" class="dot"></div>
+            </div>
+          
+            <div class="show">
+              <div class="skills" id="myname1"> <div class="skillcontent"> <img class="image_size_constent" src="/images/104494_html5_html_icon.svg" alt="HTML"></div> <div class="skillcontent"> <img class="image_size_constent" src="/images/7422531_css3_css_file_development_icon.svg" alt="CSS"></div> <div class="skillcontent"> <img class="image_size_constent" src="/images/9035061_logo_javascript_icon.svg" alt="JavaScript"></div> <div class="skillcontent"> <img class="image_size_constent" src="/images/9055799_bxl_tailwind_css_icon.svg" alt="TailwindCSS"></div> </div>
+              <div class="skills" id="myname2"> <div class="skillcontent"> <img class="image_size_constent" src="/images/4691347_php_icon.svg" alt="PHP"></div> <div class="skillcontent"> <img class="image_size_constent" src="/images/8666304_node_js_icon.svg" alt="Nodejs"> </div> </div>
+              <div class="skills" id="myname3"> <div class="skillcontent"> <img class="image_size_constent" src="/images/4691303_mysql_icon.svg" alt="MySql"> </div> </div>
+              <div class="skills" id="myname4"> <div class="skillcontent"> <img class="image_size_constent" src="/images/353430_checkbox_pen_edit_pencil_icon.svg" alt="coreldraw"></div> <div class="skillcontent"> <img class="image_size_constent" src="/images/9057106_figma_icon.svg" alt="figma"> </div></div>
+              <div class="skills" id="myname5"> <div class="skillcontent"> <img class="image_size_constent" src="/images/9118335_vscode_fill_icon.svg" alt="Vscode"> </div> <div class="skillcontent"> <img class="image_size_constent" src="/images/298878_terminal_icon.svg" alt="Terminal"> </div></div>
+            </div>
+          </div>
     </div>
-    <div class="secondmain">
-        <h1>Designer</h1>
-        <h1>Coder</h1>
-        <h1>Animator</h1>
+    <div class="fourthtext" id="experience">
+        <h2>Experience</h2>
     </div>
-    <div class="thirdmain">
-        <div class="work_title">
-            <h1>Work</h1>
+    <div class="fourth2main">
+        <div onclick="experience()" class="exp_box">
+        <h4 class="exp_text" >1. Experience</h4> 
+        <div class="col_but"> <img id="svg_arrow" class="svg" src="/images/352466_arrow_down_icon.svg" alt="down-arrow"></div>
         </div>
+        <div class="exp_dis" id="exp_id">
+            <p>Hello i have experience in cake making.</p>
+        </div>
+
+        <div onclick="experience1()" class="exp_box">
+            <h4 class="exp_text" >2. Experience</h4> 
+            <div class="col_but"> <img id="svg_arrow1" src="/images/352466_arrow_down_icon.svg" alt="down-arrow"></div>
+            </div>
+            <div class="exp_dis" id="exp_id1">
+                <p>Hello this is second experience</p>
+            </div>
+    </div>
+    <div class="thirdmain" id="projects">
+        <h2>Projects</h2>
     </div>
     <div class="thirdmain2">
         <div class="card_1">
@@ -162,46 +194,17 @@
             <div class="heading_3">
                 <h2>Tutor</h2>
             </div>
-            <img class="tutor_image" src="images/tutor_icon.svg"tutor_imge">
+            <img class="tutor_image" src="images/tutor_icon.svg" tutor_imge">
         </div>
     </div>
-    <div class="aboutme" id="abouthim"><h1>About myself in points</h1></div>
-    <div class="fourthmain">
-        <ul class="list_in_about">
-            <li>I'm a front-end developer located in Prayagraj(in India). I have some serious passion for UI design,animations and creating intuitive dynamic user experiences.</li>
-            <li>I like things well organised and thoughtfull done.</li>
-            <li>An independent guy with problem solving skills.</li>
-            <li>I do like Tv series, Hollywood movies but I figure out it very time taking so all i now prefer is books over films.</li>
-            <li>Interested in working with such people who are willing to make their websites awsome and uniqe both at the same time.</li>
-        </ul>   
-    </div>
-    <div class="fourthtext">
-        <h2>Listed here Some vector-arts</h2>
-    </div>
-    <div class="fourth2main">
-        <div class="images">
-
-        </div>
-    </div>
-    <div class="fifthmain">
-        <div class="visitors">
-            <div class="head">
-                <h2>Visitors</h2>
-            </div>
-            <div class="visitors_num">
-                <h3>9999</h3>
-            </div>
-        </div>
-    </div>
-    <div class="sixthmain">
+    <div class="sixthmain" id="contact">
         <h1>Contact Me.</h1>
     </div>
     <div class="sixthmain_second">
-        <h3 class="write_name">Write Your Name - <input id="name_id" type="text"></h3>
-        <h3 class="write_email">Your Email - <input id="email_id" type="text"></h3>
-        <h3 class="write_massege">Your Massege - <textarea name="textarea" id="massege_id" cols="30"
-                rows="10"></textarea>
+        <img src="/images/im_nikhilsharma tele qr.jpg" class="telegramqr"
+            alt="Here is my user name of telegram - @IM_NIKHILSHARMA">
+        <h2>nikhilsharma.ns993@gmail.com</h2>
+        <h5>Designed & Build by Nikhil Sharma</h5>
     </div>
 </body>
-
 </html>

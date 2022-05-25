@@ -25,33 +25,28 @@ body{
 .arrow{
     height: 7vh;
 }
+.content{
+    display: none;
+}
 .mainheader{
     display: flex;
     flex-direction: row;
 }
 .header{
     background-color: rgb(253, 232, 232);
-    /* background-color: rgb(255, 255, 255); */
-    height: 10vh; width: 80vw;
-    display: flex;
-    position: sticky;
-}
-.header2{
-    background-color: rgb(253, 232, 232);
-    height: 10vh; width: 20vw;
+    height: 10vh; width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    position: sticky;
 }
 .main{
     height: 100vh;
     background-color: black;
-    display: flex;
+    display: flex; 
 }
 .first{
     height: 100vh; width: 155vw;
-    background-color: #202020;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,7 +84,7 @@ body{
     background-color: rgb(235, 229, 229);
     color: black;
     position: absolute;
-    margin-left: 6%;
+    margin-left: 100%;
     margin-top: -6%;
     display: none;
 }
@@ -97,7 +92,7 @@ body{
     height: 80vh; width: 45vw;
     background-color: rgb(235, 229, 229);
     position: absolute;
-    margin-left: 6%;
+    margin-left: 100%;
     margin-top: -6%;
     color: black;
     display: flex;
@@ -119,31 +114,23 @@ body{
     font-size: 4vh;
 }
 .welcome{
-    margin-top: 5%;
     font-size: 160%;
     color: white;
     font-style:italic;
     font-family:'Courier New';
     user-select: none;
 }
+.owner{
+    height: 10vh; width: 20vw;
+    display: flex; justify-content: space-around;
+    align-items: center;
+}
+.ver{
+    height: 5.5vh;
+}
 .welcome_msg{
     color: rgb(221, 221, 221);
     user-select: none;
-}
-.sidebar{
-    height: 100vh; width: 10vw;
-    background-color: rgb(110, 110, 253);
-    position: relative;
-    right: 200%;
-    display: grid;
-    place-items: center;
-}
-#check{
-    display: none;
-}
-#check:checked ~.sidebar{
-    right: 0%;
-    z-index: 111;
 }
 .second{
     height: 100vh; width: 150vw;
@@ -163,108 +150,20 @@ body{
     font-size: 200%;
     color: rgb(22, 22, 22);
 }
+.uperbox{
+    background-color: #202020;
+    color: white;
+    display: flex;
+    justify-content: center; align-items: center;
+    height: 10vh;
+}
 .box{
     background-color: rgb(235, 229, 229);
-    height: 65vh;
+    height: 90vh;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.box1{
-    background-color: #202020;
-    width: 5vw; height: 40vh;
-    margin-left: 5%; 
-    margin-top: 5%;
-    border-radius: 20px;
-    display: flex;
-    text-align: center;
+    flex-wrap:wrap;
     justify-content: center;
     align-items: center;
-    align-self: stretch;
-}
-.box2{
-    background-color: white;
-    width: 15vw; height: 40vh;
-    margin-top: 5%;
-    margin-left: 1%;
-    border-radius: 20px;
-    text-align: center;
-}
-.probar{
-    width: 0vw; height: 0.1vh;
-    background-color: rgb(31, 31, 31);
-    position: relative;
-    top: 10%; left: 10%;
-    transition: width 1s ease-in-out;
-}
-.box2:hover .probar {
-    width: 70%;
-}   
-.probar1{
-    width: 0vw; height: 0.1vh;
-    background-color: rgb(31, 31, 31);
-    position: relative;
-    top: 10%; left: 10%;
-    transition: width 1s ease-in-out;
-}
-.box3:hover .probar1{
-    width: 50%;
-}
-.probar2{
-    width: 0vw; height: 0.1vh;
-    /* background-image: linear-gradient(20deg, yellow,tomato,rgb(84, 84, 192)); */
-    background-color: rgb(31, 31, 31);
-    position: relative;
-    top: 10%; left: 10%;
-    transition: width 1s ease-in-out;
-}
-.box4:hover .probar2{
-    width: 10%;
-}
-.probar3{
-    width: 0vw; height: 0.1vh;
-    /* background-image: linear-gradient(20deg, yellow,tomato,rgb(84, 84, 192)); */
-    background-color: rgb(31, 31, 31);
-    position: relative;
-    top: 10%; left: 10%;
-    transition: width 1s ease-in-out;
-}
-.box5:hover .probar3{
-    width: 60%;
-}
-.box3{
-    background-color: white;
-    width: 15vw; height: 40vh;
-    margin-top: 5%;
-    margin-left: 1%;
-    border-radius: 20px;
-    text-align: center;
-}
-.box4{
-    background-color: white;
-    width: 15vw; height: 40vh;
-    margin-top: 5%;
-    margin-left: 1%;
-    border-radius: 20px;
-    text-align: center;
-}
-.box5{
-    background-color: white;
-    width: 15vw; height: 40vh;
-    margin-top: 5%;
-    margin-left: 1%;
-    border-radius: 20px;
-    text-align: center;
-}
-.percent{
-    position: relative;
-    top: 4vw;
-    color: rgb(31, 31, 31);
-    font-size: 5.6vw;
-    font-family:'sans-serif';
-}
-.titles{
-    color: rgb(31, 31, 31);
 }
 .material-icons {
     font-family: 'Material Icons';
@@ -278,22 +177,19 @@ body{
 }
 .about1{
     padding: 5.5px;
-    background-color: rebeccapurple;
+    background-color: transparent;
     border-radius: 5px;
-    color: rgb(255, 255, 255);
+    color: black;
     text-decoration: none;
 }
-.Experience{
-    transform: rotate(-90deg);
+.about1:hover{
+    background-color: #202020;
     color: white;
-    font-size: 2vw;
 }
 .fimage{
-    height: 45vh; 
-    border-radius: 200%;
+    height: 250px; width: 250px; 
+    border-radius: 300%;
     pointer-events: none;
-    padding: 1%; 
-    animation: two 2s linear;
 }
 .option{
     width: 4vw; height: 60vh;
@@ -301,8 +197,9 @@ body{
     display: flex;
     flex-direction: column;
     align-self: flex-end;
-    margin-top: -75vh;
+    margin-top: 3vh;
     border-radius: 10px 0% 0% 10px;
+    position: absolute;
 }
 .artworkicon{
     margin-top: 10%; margin-left: 10%;
@@ -315,23 +212,22 @@ body{
 .artworkicon:hover{
     border-color: #202020;
 }
-#artwork_icondiv{
+.overschoolicon{
     height: 80vh; width: 45vw;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(235, 229, 229);
     position: absolute;
-    margin-left: 10vh;
-    margin-top: -10vh;
+    margin-left: 100%;
     color: black;
-    display: none;
-}
-.themes_heading{
-    text-align: center;
-}
-.secondwhitepage{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
 }
+.artworkicon:hover +.overschoolicon{
+    visibility: visible;
+}
+
 .black_blockoftheme{
     height: 20vh; width: 10vw;
     background-color: #202020;
@@ -409,7 +305,7 @@ body{
     height: 80vh; width: 45vw;
     background-color: rgb(235, 229, 229);
     position: absolute;
-    margin-left: 6%;
+    margin-left: 100%;
     margin-top: -6%;
     color: black;
     display: flex;
@@ -452,7 +348,7 @@ body{
     height: 80vh; width: 45vw;
     background-color: rgb(235, 229, 229);
     position: absolute;
-    margin-left: 6%;
+    margin-left: 100%;
     margin-top: -6%;
     color: black;
     display: flex;
@@ -486,14 +382,6 @@ body{
 .quoteicon:hover{
     border-color: #202020;
 }
-.secondmain{
-    height: 90vh;
-    background-color: #202020; color: white;
-    font-size: x-large;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 .titles{
     display: flex;
     align-items: center;
@@ -501,16 +389,15 @@ body{
     align-items: center;
 }
 .thirdmain{
-    background-color: whitesmoke;
+    background-color: #202020;
+    color: white;
     height: 10vh;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    color: #202020;
-    font-size: 5vh;
+    align-items: center;
 }
 .thirdmain2{
-    background-color: whitesmoke;
+    background-color: rgb(235, 229, 229);
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -569,13 +456,13 @@ body{
 #abouthim{
     background-color: #202020;
     color: white;
-    height: 15vh;
+    height: 10vh;
     display: flex; align-items: center;
     justify-content: center;
 }
 .fourthmain{
-    background-color: rgb(255, 255, 255);
-    height: 85vh;
+    background-color: rgb(235, 229, 229);
+    height: 90vh;
     display: flex; 
     justify-content: center;
     align-items: center;
@@ -585,27 +472,39 @@ body{
     align-items: center;
     justify-content: center;
     height: 10vh;
-    background-color: coral;
+    background-color: #202020;
+    color: white;
 }
 .fourth2main{
     height: 90vh; 
-    background-color: #202020;
-    display: flex;
+    background-color: rgb(235, 229, 229);
+    display: flex; flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.images{
+.exp_box{
+    height: 10vh; width: 90vw;
+    background-color: coral;
+    border: 10px solid black;
+    color: black;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.exp_dis{
+    background-color: white;
+    height: 30vh; width: 90vw;
+    display: none;
 }
 .frame{
     width: 50vw;
 }
 .list_in_about{
     font-size:x-large;
-    height: 50vh; width: 70vw;
     color: #202020;
+    height: 50vh; width: 70vw;
+    background-color: transparent;
 }
 .de{
     width: 35vw; height: 90vh;
@@ -633,64 +532,78 @@ body{
     align-items: center;
     justify-content: center;
 }
-.fifthmain{
-    background-color: rgb(255, 255, 255);
-    height: 20vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-.visitors{
-    background-color: coral;
-    height: 15vh; width: 20vw;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 .sixthmain{
     height: 10vh;
-    background-color: rgb(255, 255, 255);
+    background-color: #202020;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
-    color: coral;
-    font-size: 6vh;
+    color: white;
+    font-size: 2vh;
 }
 .sixthmain_second{
     height: 90vh; 
     background-color: rgb(221, 220, 220);
-    border: 3vh solid coral;
+    border: 3vh solid #202020;
+    display: flex; flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.telegramqr{
+    height: 70vh; width: 30vw;
+}
+/* Skills */
+.mybutton{
+    padding: 1%; 
+    height: 10vh; width: 15vw;
+    background-color:#202020;
+    color: white;
+    font-size: large;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .mybutton:hover{
+      background-color: white;
+      color: black;
+  }
+  .skill{
+    display: flex;
+    justify-content: space-around;
+  }
+  .dot{
+    height: 1vh; width: 15vw;
+    background-color: coral;
+  }
+  .buttons{
+    height: 45vh; width: 20vw;
+    background-color: transparent;
+    display: flex; 
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .show{
+    background-color: transparent;
+    height: 45vh; width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+.skillcontent{
+    height: 20vh; width: 15vw;
+    background-color: transparent;
+    color: #202020;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
-.write_name{
-    color: coral;
-    font-size: 3.5vh;
-    position: absolute;
-    margin-left: 5vh;
-    margin-top: 10vh;
-}
-.write_email{
-    color: coral;
-    font-size: 3.5vh;
-    position: absolute;
-    margin-left: 5vh;
-    margin-top: 25vh;
-}
-.write_massege{
-    color: coral;
-    font-size: 3.5vh;
-    margin-left: 5vh;
-    margin-top: 45vh;
-}
-#name_id{
-    height: 5vh; width: 20vw;
-}
-#email_id{
-    height: 5vh; width: 24.5vw;
-}
-#massege_id{
+.image_size_constent{
     height: 20vh;
+    border: 10px solid black; 
+}
+.image_size_constent:hover{
+    height: 21vh;
 }
