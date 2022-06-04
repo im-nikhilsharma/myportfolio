@@ -485,17 +485,26 @@ body{
 .exp_box{
     height: 10vh; width: 90vw;
     background-color: coral;
-    border: 10px solid black;
     color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
 }
+.exp_box:hover{
+    background-color: #202020;
+    color: white;
+}
+.exp_text{
+    margin-left: 10px;
+}
 .exp_dis{
     background-color: white;
     height: 30vh; width: 90vw;
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
 }
 .frame{
     width: 50vw;
