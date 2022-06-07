@@ -15,7 +15,11 @@
 <body onload="myfunction()">
     <div class="mainheader">
         <div class="header">
+            <div id="title_icon">
             <h2 class="name">Ns.</h2>
+            <div onclick="arrow()" id="arrow"><img src="/images/arrow-up-right.svg" alt="arrow"></div>
+            <div id="showname"><h3>NIKHIL SHARMA</h3></div>
+            </div>
             <div id="span"><a class="about1" href="#home">Home</a></div>
             <div id="span"><a class="about1" href="#abouthim">About</a></div>
             <div id="span"><a class="about1" href="#skills">Skills</a></div>
@@ -138,41 +142,74 @@
     <div class="box">
         <div class="skill">
             <div class="buttons">
-              <div  onclick="first()"  class="mybutton" id="button1">Front-end </div> <div id="dotid1" class="dot"></div> 
-              <div  onclick="second()" class="mybutton" id="button2">Back-end  </div> <div id="dotid2" class="dot"></div>
-              <div  onclick="third()"  class="mybutton" id="button3">Database  </div> <div id="dotid3" class="dot"></div>
-              <div  onclick="four()"   class="mybutton" id="button4">Design    </div> <div id="dotid4" class="dot"></div>
-              <div  onclick="five()"   class="mybutton" id="button5">Tools     </div> <div id="dotid5" class="dot"></div>
+                <div onclick="first()" class="mybutton" id="button1">Front-end </div>
+                <div id="dotid1" class="dot"></div>
+                <div onclick="second()" class="mybutton" id="button2">Back-end </div>
+                <div id="dotid2" class="dot"></div>
+                <div onclick="third()" class="mybutton" id="button3">Database </div>
+                <div id="dotid3" class="dot"></div>
+                <div onclick="four()" class="mybutton" id="button4">Design </div>
+                <div id="dotid4" class="dot"></div>
+                <div onclick="five()" class="mybutton" id="button5">Tools </div>
+                <div id="dotid5" class="dot"></div>
             </div>
-          
+
             <div class="show">
-              <div class="skills" id="myname1"> <div class="skillcontent"> <img class="image_size_constent" src="/images/104494_html5_html_icon.svg" alt="HTML"></div> <div class="skillcontent"> <img class="image_size_constent" src="/images/7422531_css3_css_file_development_icon.svg" alt="CSS"></div> <div class="skillcontent"> <img class="image_size_constent" src="/images/9035061_logo_javascript_icon.svg" alt="JavaScript"></div> <div class="skillcontent"> <img class="image_size_constent" src="/images/9055799_bxl_tailwind_css_icon.svg" alt="TailwindCSS"></div> </div>
-              <div class="skills" id="myname2"> <div class="skillcontent"> <img class="image_size_constent" src="/images/4691347_php_icon.svg" alt="PHP"></div> <div class="skillcontent"> <img class="image_size_constent" src="/images/8666304_node_js_icon.svg" alt="Nodejs"> </div> </div>
-              <div class="skills" id="myname3"> <div class="skillcontent"> <img class="image_size_constent" src="/images/4691303_mysql_icon.svg" alt="MySql"> </div> </div>
-              <div class="skills" id="myname4"> <div class="skillcontent"> <img class="image_size_constent" src="/images/353430_checkbox_pen_edit_pencil_icon.svg" alt="coreldraw"></div> <div class="skillcontent"> <img class="image_size_constent" src="/images/9057106_figma_icon.svg" alt="figma"> </div></div>
-              <div class="skills" id="myname5"> <div class="skillcontent"> <img class="image_size_constent" src="/images/9118335_vscode_fill_icon.svg" alt="Vscode"> </div> <div class="skillcontent"> <img class="image_size_constent" src="/images/298878_terminal_icon.svg" alt="Terminal"> </div></div>
+                <div class="skills" id="myname1">
+                    <div class="skillcontent"> <img class="image_size_constent" src="/images/104494_html5_html_icon.svg"
+                            alt="HTML"></div>
+                    <div class="skillcontent"> <img class="image_size_constent"
+                            src="/images/7422531_css3_css_file_development_icon.svg" alt="CSS"></div>
+                    <div class="skillcontent"> <img class="image_size_constent"
+                            src="/images/9035061_logo_javascript_icon.svg" alt="JavaScript"></div>
+                    <div class="skillcontent"> <img class="image_size_constent"
+                            src="/images/9055799_bxl_tailwind_css_icon.svg" alt="TailwindCSS"></div>
+                </div>
+                <div class="skills" id="myname2">
+                    <div class="skillcontent"> <img class="image_size_constent" src="/images/4691347_php_icon.svg"
+                            alt="PHP"></div>
+                    <div class="skillcontent"> <img class="image_size_constent" src="/images/8666304_node_js_icon.svg"
+                            alt="Nodejs"> </div>
+                </div>
+                <div class="skills" id="myname3">
+                    <div class="skillcontent"> <img class="image_size_constent" src="/images/4691303_mysql_icon.svg"
+                            alt="MySql"> </div>
+                </div>
+                <div class="skills" id="myname4">
+                    <div class="skillcontent"> <img class="image_size_constent"
+                            src="/images/353430_checkbox_pen_edit_pencil_icon.svg" alt="coreldraw"></div>
+                    <div class="skillcontent"> <img class="image_size_constent" src="/images/9057106_figma_icon.svg"
+                            alt="figma"> </div>
+                </div>
+                <div class="skills" id="myname5">
+                    <div class="skillcontent"> <img class="image_size_constent"
+                            src="/images/9118335_vscode_fill_icon.svg" alt="Vscode"> </div>
+                    <div class="skillcontent"> <img class="image_size_constent" src="/images/298878_terminal_icon.svg"
+                            alt="Terminal"> </div>
+                </div>
             </div>
-          </div>
+        </div>
     </div>
     <div class="fourthtext" id="experience">
         <h2>Experience</h2>
     </div>
     <div class="fourth2main">
         <div onclick="experience()" class="exp_box">
-        <h4 class="exp_text" >1. Experience</h4> 
-        <div class="col_but"> <img id="svg_arrow" class="svg" src="/images/352466_arrow_down_icon.svg" alt="down-arrow"></div>
+            <h4 class="exp_text">1. Experience</h4>
+            <div class="col_but"> <img id="svg_arrow" class="svg" src="/images/352466_arrow_down_icon.svg"
+                    alt="down-arrow"></div>
         </div>
         <div class="exp_dis" id="exp_id">
             <p>Worked as a front-end developer.</p>
         </div>
 
         <div onclick="experience1()" class="exp_box">
-            <h4 class="exp_text" >2. Experience</h4> 
+            <h4 class="exp_text">2. Experience</h4>
             <div class="col_but"> <img id="svg_arrow1" src="/images/352466_arrow_down_icon.svg" alt="down-arrow"></div>
-            </div>
-            <div class="exp_dis" id="exp_id1">
-                <p>Made projects on youtube.</p>
-            </div>
+        </div>
+        <div class="exp_dis" id="exp_id1">
+            <p>Made projects on youtube.</p>
+        </div>
     </div>
     <div class="thirdmain" id="projects">
         <h2>Projects</h2>
@@ -207,4 +244,5 @@
         <h5>Designed & Build by Nikhil Sharma</h5>
     </div>
 </body>
+
 </html>

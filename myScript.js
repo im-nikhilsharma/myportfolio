@@ -90,4 +90,20 @@ function experience1() {
   }
   document.querySelector("#svg_arrow1").style.transform = "rotate(180deg)";
 }
-// Roteting arrow in experience
+function arrow(){
+  let id = null;
+  let elem = document.getElementById('showname');
+  
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 0.5);
+  function frame(){
+    if (pos == 50){
+      clearInterval(id);
+    }else{
+      pos++;
+      elem.style.left = pos + "px";
+    }
+  } 
+}
+
