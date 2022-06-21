@@ -771,7 +771,6 @@ body {
 .skillcontent {
     height: 20vh;
     width: 15vw;
-    background-color: transparent;
     color: #202020;
     display: flex;
     justify-content: space-evenly;
@@ -781,7 +780,6 @@ body {
 
 .image_size_constent {
     height: 20vh;
-    border: 10px solid black;
 }
 
 .image_size_constent:hover {
