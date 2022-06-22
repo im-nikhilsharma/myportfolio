@@ -47,12 +47,13 @@ body {
 .content {
     display: none;
 }
-
 .mainheader {
     display: flex;
     flex-direction: row;
     position: fixed;
-    z-index: 1111;
+    margin-top: -0px;
+    z-index: +1111;
+    box-shadow: 10px 0px 10px 0px;
 }
 
 .header {
@@ -118,7 +119,7 @@ body {
 .overquoteicon {
     height: 80vh;
     width: 45vw;
-    background-color: rgb(235, 229, 229);
+    background-color: rgb(255, 255, 255);
     color: black;
     position: absolute;
     margin-left: 100%;
@@ -129,7 +130,7 @@ body {
 .overbookicon {
     height: 80vh;
     width: 45vw;
-    background-color: rgb(235, 229, 229);
+    background-color: rgb(255, 255, 255);
     position: absolute;
     margin-left: 100%;
     margin-top: -6%;
@@ -177,14 +178,14 @@ body {
 }
 
 .welcome_msg {
-    color: rgb(221, 221, 221);
+    color: rgb(255, 255, 255);
     user-select: none;
 }
 
 .second {
     height: 100vh;
     width: 150vw;
-    background-color: rgb(235, 229, 229);
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -213,7 +214,7 @@ body {
 }
 
 .box {
-    background-color: rgb(235, 229, 229);
+    background-color: rgb(255, 255, 255);
     height: 90vh;
     display: flex;
     flex-wrap: wrap;
@@ -257,7 +258,7 @@ body {
 .option {
     width: 4vw;
     height: 60vh;
-    background-color: rgb(235, 229, 229);
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-self: flex-end;
@@ -284,7 +285,7 @@ body {
 .overschoolicon {
     height: 80vh;
     width: 45vw;
-    background-color: rgb(235, 229, 229);
+    background-color: rgb(255, 255, 255);
     position: absolute;
     margin-left: 100%;
     color: black;
@@ -323,7 +324,7 @@ body {
 .halfline_block_white {
     height: 6vh;
     width: 10vw;
-    background-color: rgb(221, 220, 220);
+    background-color: rgb(255, 255, 255);
     border-radius: 2vh 2vh 0vh 0vh;
 }
 
@@ -337,7 +338,7 @@ body {
 .defaultwhite_blockoftheme {
     height: 20vh;
     width: 10vw;
-    background-color: rgb(235, 233, 233);
+    background-color: rgb(255, 255, 255);
     border-radius: 2vh;
 }
 
@@ -395,7 +396,7 @@ body {
 .overworkicon {
     height: 80vh;
     width: 45vw;
-    background-color: rgb(235, 229, 229);
+    background-color: rgb(255, 255, 255);
     position: absolute;
     margin-left: 100%;
     margin-top: -6%;
@@ -447,7 +448,7 @@ body {
 .overcodeicon {
     height: 80vh;
     width: 45vw;
-    background-color: rgb(235, 229, 229);
+    background-color: rgb(255, 255, 255);
     position: absolute;
     margin-left: 100%;
     margin-top: -6%;
@@ -510,7 +511,7 @@ body {
 }
 
 .thirdmain2 {
-    background-color: rgb(235, 229, 229);
+    background-color: rgb(255, 255, 255);
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -529,7 +530,7 @@ body {
 }
 
 .heading_1 {
-    background-color: #dad8d8;
+    background-color: #ffffff;
     color: black;
     display: flex;
     justify-content: center;
@@ -538,7 +539,7 @@ body {
 }
 
 .heading_2 {
-    background-color: #dad8d8;
+    background-color: #ffffff;
     color: black;
     display: flex;
     justify-content: center;
@@ -547,7 +548,7 @@ body {
 }
 
 .heading_3 {
-    background-color: #dad8d8;
+    background-color: #ffffff;
     color: black;
     display: flex;
     justify-content: center;
@@ -595,7 +596,7 @@ body {
 }
 
 .fourthmain {
-    background-color: rgb(235, 229, 229);
+    background-color: rgb(255, 255, 255);
     height: 90vh;
     display: flex;
     justify-content: center;
@@ -613,7 +614,7 @@ body {
 
 .fourth2main {
     height: 90vh;
-    background-color: rgb(235, 229, 229);
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -707,7 +708,7 @@ body {
 
 .sixthmain_second {
     height: 90vh;
-    background-color: rgb(221, 220, 220);
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -715,7 +716,7 @@ body {
 }
 
 .telegramqr {
-    height: 70vh;
+    height: 45vh;
     width: 30vw;
 }
 
